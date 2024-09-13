@@ -13,7 +13,7 @@ int main(){
 		printf("C Grade");
 	}else if (Score <=69 && Score >= 60){
 		printf("D Grade");
-	}else if (Score <=60){
+	}else if (Score <60){
 		printf("F Grade");
 	}else{
 		printf("Invalid Input");
