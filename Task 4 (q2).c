@@ -20,4 +20,5 @@ int main(){
     TotalAmount = Amount + SurCharge;
     
     printf("Your bill for the %d Unit consumed is %.2f", Units, TotalAmount);
+    return 0;
 }
