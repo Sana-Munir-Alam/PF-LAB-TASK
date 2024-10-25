@@ -19,7 +19,7 @@ int main(){
 	//sum column
 	for(int j = 0; j<3; j++){
 		for(int i = 0; i<3; i++){
-			SumColumn[i]= SumColumn[i] + Array[i][j];
+			SumColumn[i]= SumColumn[i] + Array[j][i];
 		}
 	}
 	printf("The Sum of rows is:\n");
