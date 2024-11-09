@@ -1,34 +1,16 @@
 #include <stdio.h>
-#include <string.h>
 
-struct Cars{
-	char Make[30];
-	char Model[30];
-	int Year;
-	float Price, Milege;
-};
-
+void PercentageCalculator(int Num){
+    float Percent;
+    for (int i = 1; i <= 100; i++){
+        Percent = Num * (i/100.0);
+        printf("%d Percent = %.2f\n", i,Percent);
+    }
+}
 int main(){
-	int N;
-	int Choice = 0;
-	struct Cars Info;
-	while (Choice == 0){
-		printf("Enter how many cars you want to add: ");
-		scanf("%d", &N);
-		for(int i = 0; i < N; i++){
-			printf("Enter Car Make: ");
-			fgets(Info.Make, 30, stdin);
-			Info.Make[strcspn(Info.Make, "\n")] = '\0';
-			printf("Enter Car Model: ");
-			fgets(Info.Model, 30, stdin);
-			Info.Model[strcspn(Info.Model, "\n")] = '\0';
-			printf("Enter Car Year: ");
-			scanf("%d", Info.Year);
-			printf("Enter Car Price: ");
-			scanf("%d", Info.Price);
-			printf("Enter Car Milege: ");
-			scanf("%d", Info.Milege);
-		}
-	}
-	return 0;
+    int Num;
+    printf("Enter a Value to find it's percentage: ");
+    scanf("%d", &Num);
+    PercentageCalculator(Num);
+    return 0;
 }
