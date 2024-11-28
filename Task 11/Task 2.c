@@ -7,7 +7,7 @@ int main() {
     char line[256];
     int LineNumber = 1;
 
-    printf("\nEnter the FileName to open (e.g Animal.txt): ");
+    printf("\nEnter the File Name to open (e.g Animal.txt): ");
     scanf("%s", FileName);
     file = fopen(FileName, "r");
     if (file == NULL) {
